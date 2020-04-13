@@ -1,0 +1,37 @@
+.media {
+    // margin-top: 10rem;
+
+    &__text {
+        font-weight: 500;
+        font-size: 1.7rem;
+    }
+
+    &__list{
+        text-decoration: none;
+        float: right;
+
+    }
+
+    &__item {
+        display: inline-block;
+        font-size: 1.7rem;
+        &:not(:last-child) {
+            margin-right: 2.5rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-black;
+            transition: color .2s;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-tertiary;
+
+        }
+    }
+
+}

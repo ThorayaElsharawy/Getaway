@@ -1,0 +1,77 @@
+.stories {
+
+    overflow: hidden;
+    padding: 4.8rem 0;
+
+    .slider{
+        width: 120rem;
+        height: 40rem;
+        // overflow: hidden;
+        
+
+        &__holder {
+            width: 291.2rem;
+            animation: slide 14s ease-in infinite;
+
+            @include respond (tab-land) {
+                animation: slide-land 14s ease-in infinite;
+            }
+
+            @include respond (tab-port) {
+                // animation: slide-port 14s ease-in infinite;
+            }
+
+            @include respond (phone) {
+                animation: slide-phone 14s ease-in infinite;
+            }
+
+        }
+
+        &__story {
+            width: 60rem;
+            height: 30rem;
+            float: left;
+            background-color: $color-white;
+            margin-right: 6rem;
+            padding: 5rem;
+            position: relative;
+
+       
+            &__img {
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                position: absolute;
+                top: -5rem;
+                left: 3rem;
+                z-index: 10;
+
+            }
+
+            &__content {
+                position: relative;
+            }
+
+            &__icon {
+
+                color: $color-tertiary;
+                position: absolute;
+                top: -5rem;
+                right: 0;
+            }
+
+            &__name {
+                margin: 2rem 0;
+                font-weight: 400;
+                font-size: 2.2rem;
+            }
+
+            &__text {
+                font-weight: 300;
+                color: $color-gray;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+

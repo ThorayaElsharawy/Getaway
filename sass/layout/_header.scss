@@ -1,0 +1,93 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-image: url(../img/nat-14-small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5rem),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem),
+            only screen and (min-width: 125rem){
+        background-image: url(../img/nat-14.jpg);
+    }
+
+    &__box-border {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        border: 4px solid $color-tertiary;
+        height: 55rem;
+        width: 25rem;
+
+        @include respond (tab-land) {
+            height: 48rem;
+        }
+
+        @include respond (tab-port) {
+            top: 30%;
+            height: 44rem;
+        }
+
+
+    }
+
+    &__box-content {
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        color: $color-white;  
+
+        @include respond (tab-port) {
+            top: 10%;
+        }
+   
+    }
+
+    &__box-logo {
+        font-size: 2.4rem;
+        font-weight: 300;
+        animation: moveInRight .8s ease-in-out;
+
+        @include respond (tab-land) {
+            font-size: 2rem;
+        }
+
+    }
+
+    &__box-text {
+        line-height: 1.2;
+        font-weight: 700;
+        margin: 5rem 0  8rem 0;
+
+        &-1,
+        &-3 {
+            display: inline-block;
+            animation: moveInLeft .8s ease-in-out;
+            font-size: 5rem;
+
+            @include respond (tab-land) {
+                font-size: 3.5rem;
+            }
+        }
+
+        &-2 {
+            display: inline-block;
+            animation-name: moveInLeft;
+            animation-duration: .3s;
+            animation-delay: .4s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: backwards;
+            font-size: 7rem;
+
+            @include respond (tab-land) {
+                font-size: 5.5rem;
+            }
+
+        }
+    }
+
+}
+

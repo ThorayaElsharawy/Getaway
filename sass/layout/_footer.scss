@@ -1,0 +1,172 @@
+.footer {
+    font-size: 1.4rem;
+
+    @include respond (tab-land) {
+        .row {
+            width: 60%;
+        }
+    }
+
+    @include respond (phone) {
+        .row {
+            width: 80%;
+        }
+    }
+    position: relative;
+
+    &__heading {
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+        font-size: 1.7rem;
+        border-bottom: 1px solid $color-tertiary;
+        display: inline-block;
+
+        @include respond (tab-land) {
+            margin-top: 3rem;
+        }
+    }
+
+    &__logo {        
+        p {
+            color: $color-white;
+            font-weight: 300;
+            margin-top: 2.5rem;
+        }
+    }
+
+    &__logo-img {
+        width: 5rem;
+        height: 5rem;
+        filter: hue-rotate(30deg);
+    }
+
+    &__text {
+        color: $color-primary;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 2rem;
+
+    }
+
+    &__nav {
+        padding-left: 7rem;
+        color: $color-white;
+
+        @include respond (tab-land) {
+            padding: 0;
+        }
+    }
+
+   
+    &__list {
+        font-size: 1.4rem;
+    }
+
+    &__item {
+        list-style: none;
+        padding: .8rem 0;
+        position: relative;
+        // display: inline-block;
+       
+        @include respond (tab-land) {
+            float: left;
+            display: block;
+            margin-right: 4rem;
+        }
+    }
+
+    &__link{
+        &,
+        &:link,
+        &:visited {
+            color: $color-white;
+            text-decoration: none;
+            font-weight: 300;
+            width: 4px;
+            height: 20px;
+            position: relative;
+        }
+    }
+
+    &__info {
+        color: $color-white;
+
+        &-paragraph {
+            font-weight: 300;
+            font-size: 1.4rem;
+            line-height: 3.2rem;
+        }
+
+        span {
+            display: inline-block;
+        }
+    }
+
+    .media {
+        &__link {
+            &:link,
+            &:visited {
+             color: $color-white ;
+            }
+
+            &:hover,
+            &:active {
+                color: $color-tertiary;
+            }
+        }
+
+      
+        &__list {
+            float: left;
+        }
+    }
+
+    &__social {
+        color: $color-white;
+
+        .wrap {
+            @include clearfix
+        }
+
+        .img__wrap {
+            height: 8.5rem;
+            width: 8.5rem;
+            margin: 0 1rem 1rem 0;
+            cursor: pointer;
+            transform: scale(1);
+            overflow: hidden;
+            float: left;
+
+
+        }      
+        .img__img {
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+            position: relative;
+
+        }
+
+        .img__description {
+            font-size: 1.4rem;
+            position: absolute;
+            top: 3rem;
+            left: .8rem;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .img__wrap:hover .img__img {
+            opacity: .4;
+            transform: scale(1.6);
+        }
+
+        .img__wrap:hover .img__description {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+
+  

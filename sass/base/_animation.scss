@@ -1,0 +1,85 @@
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -660px;}
+    50% {margin-left: -660px;}
+    60% {margin-left: -1300px;}
+    70% {margin-left: -1300px;}
+    80% {margin-left: -1800px;}
+}
+
+@keyframes slide-land {
+    20% {margin-left: 0px;}
+    30% {margin-left: -650px;}
+    50% {margin-left: -650px;}
+    60% {margin-left: -1310px;}
+    70% {margin-left: -1310px;}
+    80% {margin-left: -2000px;}
+}
+
+@keyframes slide-phone {
+    20% {margin-left: 0px;}
+    30% {margin-left: -480px;}
+    50% {margin-left: -480px;}
+    60% {margin-left: -960px;}
+    70% {margin-left: -960px;}
+    80% {margin-left: -1440px;}
+}
+
+@keyframes width {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 47%;
+    }
+}
